@@ -9,7 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
   menuLink.forEach(item => {
       item.addEventListener('click', () => {
           hamburger.classList.toggle('hamburger_active');
@@ -17,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   });
 
+  
 $(window).scroll(function() {
   if ($(this).scrollTop() > 1600) {
       $(".pageup").fadeIn("slow");
@@ -26,18 +26,15 @@ $(window).scroll(function() {
         }
 });
 
-$("a[href^='#']").click(function(){
-  const _href = $(this).attr("href");
-  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-  return false;
-  });
-
 });
 
 
 
-
-
+/* $("a[href^='#']").click(function(){
+  const _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+  return false;
+  });  */
 
 
 /* const hamburger = document.querySelector(".hamburger"),
