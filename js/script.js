@@ -39,12 +39,12 @@ $("form").submit(function (e) {
     }).done(function() {
       $(this).find("input").val("");
 
-
       $("form").trigger("reset");
 
     });
     return false;
   }); 
+
 });
 
 

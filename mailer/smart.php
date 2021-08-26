@@ -11,7 +11,7 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
+$mail->Host = 'mail.shukrangarayev.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'support@shukrangarayev.ru';                 // Наш логин
 $mail->Password = 'qarayev1996';                           // Наш пароль от ящика
@@ -32,7 +32,7 @@ $mail->Subject = 'Данные';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $textarea . '<br>
+	Контент: ' . $textarea . '<br>
 	E-mail: ' . $email . '';
 
 if(!$mail->send()) {
